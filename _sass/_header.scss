@@ -12,12 +12,12 @@ body {
   top: 0;
   display: flex;
   align-items: center;
-  justify-content: space-between;
 
   .logo {
     margin: 0;
     height: 32px;
     line-height: 32px;
+    flex: 1;
     a {
       color: #00f3ff;
       text-decoration: none;
@@ -42,7 +42,6 @@ body {
       display: flex;
       align-items: center;
       gap: 1.5rem;
-      margin-right: 2rem;
 
       @include media("<sm") {
         display: none;
@@ -95,17 +94,6 @@ body {
           border-color: #fff;
           color: #fff;
         }
-      }
-    }
-
-    .icon-search {
-      width: 20px;
-      height: 20px;
-      fill: rgba(255, 255, 255, 0.7);
-      transition: all 0.2s ease;
-
-      &:hover {
-        fill: #fff;
       }
     }
   }
