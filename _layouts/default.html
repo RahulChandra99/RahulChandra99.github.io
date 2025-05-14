@@ -8,9 +8,10 @@ layout: compress
     <body class="has-push-menu">
         {% include svg-icons.html %}
         {% include header.html %}
-            <section class="content">
-                {{ content }}
-            </section>
+        {% include social-links.html %}
+        <main role="main">
+            {{ content }}
+        </main>
         {% include footer.html %}
     </body>
 </html>

@@ -1,0 +1,33 @@
+{% if site.github_username or site.linkedin_username or site.youtube_username or site.itchio_username or site.email %}
+<div class="social-links">
+    {% if site.github_username %}
+    <a href="https://github.com/{{ site.github_username }}" target="_blank" title="GitHub">
+        <svg class="icon icon-github"><use xlink:href="#icon-github"></use></svg>
+    </a>
+    {% endif %}
+    
+    {% if site.linkedin_username %}
+    <a href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank" title="LinkedIn">
+        <svg class="icon icon-linkedin"><use xlink:href="#icon-linkedin"></use></svg>
+    </a>
+    {% endif %}
+    
+    {% if site.youtube_username %}
+    <a href="https://youtube.com/@{{ site.youtube_username }}" target="_blank" title="YouTube">
+        <svg class="icon icon-youtube"><use xlink:href="#icon-youtube"></use></svg>
+    </a>
+    {% endif %}
+    
+    {% if site.itchio_username %}
+    <a href="https://{{ site.itchio_username }}.itch.io" target="_blank" title="Itch.io">
+        <img src="{{ site.baseurl }}/assets/img/icons/playgame.png" alt="Itch.io" class="icon icon-itchio">
+    </a>
+    {% endif %}
+    
+    {% if site.email %}
+    <a href="mailto:{{ site.email }}" title="Email">
+        <svg class="icon icon-email"><use xlink:href="#icon-email"></use></svg>
+    </a>
+    {% endif %}
+</div>
+{% endif %} 

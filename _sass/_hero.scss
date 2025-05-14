@@ -106,3 +106,40 @@
     }
   }
 }
+
+.hero-clean {
+  position: relative;
+  width: 100%;
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+  background-color: #1a1a1a;
+  padding: 4rem 0;
+
+  .content {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+
+    @include media(">=sm") {
+      width: 80%;
+    }
+
+    .title {
+      font-size: rem(32px);
+      color: #fff;
+      line-height: 1.4;
+      margin: 0;
+      font-weight: 400;
+
+      @include media(">=sm") {
+        font-size: rem(40px);
+      }
+
+      @include media(">=md") {
+        font-size: rem(48px);
+      }
+    }
+  }
+}
