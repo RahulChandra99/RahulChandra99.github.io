@@ -62,6 +62,8 @@ body {
         transition: all 0.2s ease;
         display: flex;
         align-items: center;
+        justify-content: center;
+        height: 20px;
 
         &:hover {
           color: #fff;
@@ -73,6 +75,7 @@ body {
         width: 20px;
         height: 20px;
         fill: currentColor;
+        display: block;
       }
 
       .icon-itchio {
@@ -81,6 +84,7 @@ body {
         object-fit: contain;
         filter: brightness(0) invert(1);
         opacity: 0.7;
+        display: block;
 
         &:hover {
           opacity: 1;
@@ -97,6 +101,7 @@ body {
         text-decoration: none;
         transition: all 0.2s ease;
         margin-left: 0.5rem;
+        height: auto;
 
         &:hover {
           background-color: rgba(255, 255, 255, 0.1);
