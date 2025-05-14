@@ -110,17 +110,17 @@
 .hero-clean {
   position: relative;
   width: 100%;
-  min-height: 80vh;
+  min-height: 50vh;
   display: flex;
   align-items: center;
   background-color: #1a1a1a;
-  padding: 6rem 0;
+  padding: 3rem 0;
 
   .content {
     width: 95%;
     max-width: 1400px;
     margin: 0 auto;
-    padding: 1.5rem;
+    padding: 1rem;
 
     @include media(">=sm") {
       width: 90%;
@@ -129,7 +129,7 @@
     .title {
       font-size: rem(28px);
       color: #fff;
-      line-height: 1.5;
+      line-height: 1.4;
       margin: 0;
       font-weight: 400;
       max-width: 1200px;
