@@ -19,15 +19,15 @@ menu:
     url: /gameplay-projects
   - title: UI Programmer Projects
     url: /ui-projects
-email: rahul.yourmail@example.com
-disqus_username: # Leave empty to disable comments
-formspree_form_id: # Optional, from https://formspree.io (leave empty if not using)
+email: rahulchandra99@gmail.com
 
 # Social Media Settings
 github_username: RahulChandra99
 linkedin_username: rahulchandra99
+youtube_username: rahulchandra4125
+itchio_username: rahul-chandra
 
-# Posts Settings (Clean and simple)
+# Posts Settings
 show_time_bar: false
 show_modal_on_exit: false
 show_modal_on_finish_post: false
@@ -35,11 +35,9 @@ two_columns_layout: false
 
 # Advanced Settings
 baseurl: "" # For GitHub Pages
-url: "https://yourusername.github.io"
+url: "https://rahulchandra99.github.io"
 google_analytics: "" # Optional
 language: "en"
-categories_folder: category
-sent_message_url: "/contact/message-sent/"
 
 # Build settings
 markdown: kramdown
@@ -52,10 +50,6 @@ paginate_path: "/page/:num/"
 show_get_theme_btn: false
 use_logo: false
 
-# Content paginator (disabled)
-paginate_content:
-  enabled: false
-
 # SASS
 sass:
   style: compressed
@@ -66,16 +60,12 @@ plugins:
 
 # Exclude unnecessary files
 exclude: [
-  'docs/',
   'vendor/',
   'LICENSE',
-  'CHANGELOG.md',
-  'jekflix.gemspec',
   'package.json',
   'package-lock.json',
   'src',
   'node_modules',
-  'initpost.sh',
   'Gemfile',
   'Gemfile.lock',
   'gulpfile.js',
