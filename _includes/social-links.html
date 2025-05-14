@@ -1,14 +1,14 @@
 {% if site.github_username or site.linkedin_username or site.youtube_username or site.itchio_username or site.email %}
 <div class="social-links">
-    {% if site.github_username %}
-    <a href="https://github.com/{{ site.github_username }}" target="_blank" title="GitHub">
-        <svg class="icon icon-github"><use xlink:href="#icon-github"></use></svg>
-    </a>
-    {% endif %}
-    
     {% if site.linkedin_username %}
     <a href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank" title="LinkedIn">
         <svg class="icon icon-linkedin"><use xlink:href="#icon-linkedin"></use></svg>
+    </a>
+    {% endif %}
+    
+    {% if site.github_username %}
+    <a href="https://github.com/{{ site.github_username }}" target="_blank" title="GitHub">
+        <svg class="icon icon-github"><use xlink:href="#icon-github"></use></svg>
     </a>
     {% endif %}
     
@@ -29,5 +29,9 @@
         <svg class="icon icon-email"><use xlink:href="#icon-email"></use></svg>
     </a>
     {% endif %}
+
+    <a href="{{ site.baseurl }}/assets/resume.pdf" class="resume-button" target="_blank" title="Download Resume">
+        Resume ↓
+    </a>
 </div>
 {% endif %} 
