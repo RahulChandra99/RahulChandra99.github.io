@@ -11,9 +11,34 @@
             {% endif %}
         </a>
     </h1>
-    <a id="search" class="dosearch" role="button">
-        <svg class="icon-search"><use xlink:href="#icon-search"></use></svg>
-    </a>
+    <div class="header-right">
+        <div class="social-links">
+            {% if site.linkedin_username %}
+            <a href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank" title="LinkedIn">
+                <svg class="icon icon-linkedin"><use xlink:href="#icon-linkedin"></use></svg>
+            </a>
+            {% endif %}
+            
+            {% if site.github_username %}
+            <a href="https://github.com/{{ site.github_username }}" target="_blank" title="GitHub">
+                <svg class="icon icon-github"><use xlink:href="#icon-github"></use></svg>
+            </a>
+            {% endif %}
+            
+            {% if site.itchio_username %}
+            <a href="https://{{ site.itchio_username }}.itch.io" target="_blank" title="Itch.io">
+                <img src="{{ site.baseurl }}/assets/img/icons/playgame.png" alt="Itch.io" class="icon icon-itchio">
+            </a>
+            {% endif %}
+
+            <a href="{{ site.baseurl }}/assets/resume.pdf" class="resume-button" target="_blank" title="Download Resume">
+                Resume ↓
+            </a>
+        </div>
+        <a id="search" class="dosearch" role="button">
+            <svg class="icon-search"><use xlink:href="#icon-search"></use></svg>
+        </a>
+    </div>
     {% if site.show_get_theme_btn %}
         <a href="https://github.com/thiagorossener/jekflix-template" class="get-theme" role="button">
             Get this theme!

@@ -4,102 +4,85 @@ body {
 }
 
 .bar-header {
-  background-color: $primaryDark;
-  padding: rem(10px) rem(15px);
-  position: fixed;
-  left: 0;
+  background-color: #1a1a1a;
+  padding: 0.5rem 0;
   width: 100%;
-  z-index: 10;
-  transition: top 0.5s, left 0.3s ease, background-color 0.5s, box-shadow 0.5s;
-  
-  @include media(">=sm") {
-    padding: rem(15px) rem(0px);
-  }
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
   .logo {
-    display: inline-block;
     margin: 0;
-    height: rem(32px);
-    line-height: rem(32px);
-
+    height: 32px;
+    line-height: 32px;
     a {
-      display: block;
-      color: $accentDark;
+      color: #fff;
       text-decoration: none;
-      font-size: rem(32px);
-      position: relative;
-      outline: 0;
+      font-size: rem(20px);
+      font-weight: bold;
     }
+  }
 
-    svg {
-      width: rem(120px);
-      height: rem(30px);
-      transition: all .4s;
-  
-      @include media(">=sm") {
-        width: rem(205px);
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    .social-links {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-right: 1rem;
+
+      @include media("<sm") {
+        display: none;
       }
-    }
-  }
 
-  .version {
-    color: $accentDark;
-    font-size: rem(10px);
-    font-weight: normal;
-    line-height: 1;
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: block;
-    transform: translateX(110%);
-    opacity: 0.3;
-  }
+      a {
+        color: #fff;
+        text-decoration: none;
+        opacity: 0.8;
+        transition: all 0.2s ease;
 
-  .icon-menu {
-    float: left;
-    cursor: pointer;
-    margin: rem(5px) rem(20px) rem(5px) 0;
-    width: rem(20px);
-    height: rem(20px);
-    fill: $accentDark;
+        &:hover {
+          opacity: 1;
+          transform: translateY(-2px);
+        }
+      }
 
-    @include media(">=sm") {
-      margin: rem(5px) rem(20px) rem(5px) rem(25px);
-    }
-  }
+      .icon {
+        width: 20px;
+        height: 20px;
+        fill: currentColor;
+      }
 
-  .dosearch {
-    float: right;
-    width: rem(30px);
-    height: rem(30px);
-    cursor: pointer;
-    margin: 0;
-    @include media(">=sm") {
-      margin: 0 rem(20px) 0 0;
-    }
-  }
+      .icon-itchio {
+        width: 20px;
+        height: 20px;
+        object-fit: contain;
+        filter: brightness(0) invert(1);
+        opacity: 0.8;
+      }
 
-  .icon-search {
-    width: rem(20px);
-    height: rem(20px);
-    fill: $accentDark;
-    margin: rem(5px);
-  }
+      .resume-button {
+        background-color: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.8);
+        color: rgba(255, 255, 255, 0.8);
+        padding: 0.3rem 0.8rem;
+        border-radius: 4px;
+        font-size: 0.9rem;
+        text-decoration: none;
+        transition: all 0.2s ease;
 
-  .get-theme {
-    display: none;
-    font-size: rem(13px);
-    font-weight: bold;
-    text-decoration: none;
-    background-color: $themeColor;
-    color: $accentDark;
-    padding: rem(5px) rem(10px);
-    border-radius: rem(5px);
-    float: right;
-    margin: rem(5px) rem(15px) rem(5px) rem(5px);
-
-    @include media(">=sm") {
-      display: inline-block;
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.1);
+          border-color: #fff;
+          color: #fff;
+        }
+      }
     }
   }
 }
