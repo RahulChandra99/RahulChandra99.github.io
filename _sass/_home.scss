@@ -216,20 +216,3 @@
     padding: rem(15px);
   }
 }
-
-.projects-heading {
-  text-align: center;
-  padding: 2rem 1rem;
-  margin-bottom: 1rem;
-
-  h2 {
-    color: #fff;
-    font-size: rem(32px);
-    font-weight: 600;
-    margin: 0;
-    
-    @include media("<sm") {
-      font-size: rem(28px);
-    }
-  }
-}
