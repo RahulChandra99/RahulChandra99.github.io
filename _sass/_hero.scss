@@ -114,32 +114,32 @@
   display: flex;
   align-items: center;
   background-color: #1a1a1a;
-  padding: 8rem 0;
+  padding: 6rem 0;
 
   .content {
-    width: 90%;
-    max-width: 1200px;
+    width: 95%;
+    max-width: 1400px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 1.5rem;
 
     @include media(">=sm") {
-      width: 80%;
+      width: 90%;
     }
 
     .title {
-      font-size: rem(32px);
+      font-size: rem(28px);
       color: #fff;
-      line-height: 1.6;
+      line-height: 1.5;
       margin: 0;
       font-weight: 400;
-      max-width: 900px;
+      max-width: 1200px;
 
       @include media(">=sm") {
-        font-size: rem(40px);
+        font-size: rem(32px);
       }
 
       @include media(">=1024px") {
-        font-size: rem(48px);
+        font-size: rem(36px);
       }
     }
   }
