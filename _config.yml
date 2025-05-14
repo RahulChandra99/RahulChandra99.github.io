@@ -1,6 +1,6 @@
 # Site Settings
 name: Rahul Chandra Portfolio
-title: Rahul Chandra | Gameplay Programmer
+title: Rahul Chandra | Gameplay & UI Programmer
 description: Gameplay and UI Programmer 
 tags:
   - blog
@@ -108,5 +108,3 @@ exclude: [
   'README.md'
 ]
 
-# Theme
-version: v3.1.2
