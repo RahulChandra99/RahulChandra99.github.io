@@ -1,13 +1,14 @@
 # Site Settings
 name: Rahul Chandra Portfolio
 title: Rahul Chandra | Gameplay & UI Programmer
-description: Gameplay and UI Programmer 
+description: Gameplay, UI, and Tools Programmer Portfolio
 tags:
-  - blog
-  - template
-  - jekyll
-  - theme
-  - netlify
+  - portfolio
+  - gameplay programmer
+  - ui programmer
+  - tools
+  - unreal engine
+  - unity
 show_hero: true
 menu:
   - title: Home
@@ -16,41 +17,27 @@ menu:
     url: /about
   - title: Contact
     url: /contact
-  - title: Feed
-    url: /feed.xml
-email: youremail@test.com
-# See: https://disqus.com/
-disqus_username: disqus_username
-# Contact Form Setting
-# See: https://formspree.io/
-formspree_form_id: formspree_form_id
-
+email: rahul.yourmail@example.com
+disqus_username: # Leave empty to disable comments
+formspree_form_id: # Optional, from https://formspree.io (leave empty if not using)
 
 # Social Media Settings
-# Remove the item if you don't need it
-github_username: github_username
-facebook_username: facebook_username
-twitter_username: twitter_username
-instagram_username: instagram_username
-linkedin_username: linkedin_username
-medium_username: medium_username
+github_username: RahulChandra99
+linkedin_username: rahul-chandra
 
-
-# Posts Settings
-show_time_bar: true
+# Posts Settings (Clean and simple)
+show_time_bar: false
 show_modal_on_exit: false
-show_modal_on_finish_post: true
-two_columns_layout: true
-
+show_modal_on_finish_post: false
+two_columns_layout: false
 
 # Advanced Settings
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
-google_analytics: "UA-XXXXXXXX-X"
+baseurl: "" # For GitHub Pages
+url: "https://yourusername.github.io"
+google_analytics: "" # Optional
 language: "en"
 categories_folder: category
 sent_message_url: "/contact/message-sent/"
-
 
 # Build settings
 markdown: kramdown
@@ -60,26 +47,12 @@ collections:
   authors:
     output: true
 paginate_path: "/page/:num/"
-show_get_theme_btn: true
+show_get_theme_btn: false
 use_logo: false
 
-# Content paginator
+# Content paginator (disabled)
 paginate_content:
-  enabled: true
-  debug: false
-  collections:
-    - posts
-  auto: false
-  separator: "--page-break--"
-  permalink: "/:num/"
-  seo_canonical: true
-  properties:
-    part:
-      is_generated: true
-    last:
-      is_generated: true
-    single:
-      is_generated: true
+  enabled: false
 
 # SASS
 sass:
@@ -88,9 +61,8 @@ sass:
 # Plugins
 plugins:
   - jekyll-paginate
-  - jekyll-paginate-content
 
-# Exclude my node related stuff
+# Exclude unnecessary files
 exclude: [
   'docs/',
   'vendor/',
@@ -107,4 +79,3 @@ exclude: [
   'gulpfile.js',
   'README.md'
 ]
-
