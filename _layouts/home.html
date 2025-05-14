@@ -33,7 +33,22 @@ layout: main
                 <div class="box-body">
                     <a class="cover" href="{{ post.url | prepend: site.baseurl }}">
                         {% include loader.html %}
-                        {% if post.optimized_image %}
+                        {% if post.youtube_id %}
+                            <div class="post-video youtube-container">
+                                <iframe 
+                                    width="100%" 
+                                    height="100%" 
+                                    src="https://www.youtube.com/embed/{{ post.youtube_id }}?autoplay=0&mute=1&controls=0&loop=1&playlist={{ post.youtube_id }}"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    loading="lazy">
+                                </iframe>
+                            </div>
+                        {% elsif post.video %}
+                            <video class="post-video" loop muted preload="metadata" poster="{{ post.image }}">
+                                <source src="{{ post.video }}" type="video/mp4">
+                            </video>
+                        {% elsif post.optimized_image %}
                             <img src="/assets/img/placeholder.png" width="100%" data-url="{{ post.optimized_image }}" class="preload">
                             <noscript>
                                 <img src="{{ post.optimized_image }}" width="100%">
