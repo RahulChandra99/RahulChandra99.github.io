@@ -1,5 +1,5 @@
 # Site Settings
-name: Rahul Chandra Portfolio
+name: Rahul Chandra | Gameplay & UI Programmer
 title: Rahul Chandra | Gameplay & UI Programmer
 description: Gameplay, UI, and Tools Programmer Portfolio
 tags:
@@ -15,15 +15,17 @@ menu:
     url: /
   - title: About
     url: /about
-  - title: Contact
-    url: /contact
+  - title: Gameplay Programmer Projects
+    url: /gameplay-projects
+  - title: UI Programmer Projects
+    url: /ui-projects
 email: rahul.yourmail@example.com
 disqus_username: # Leave empty to disable comments
 formspree_form_id: # Optional, from https://formspree.io (leave empty if not using)
 
 # Social Media Settings
 github_username: RahulChandra99
-linkedin_username: rahul-chandra
+linkedin_username: rahulchandra99
 
 # Posts Settings (Clean and simple)
 show_time_bar: false
